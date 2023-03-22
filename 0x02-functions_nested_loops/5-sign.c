@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- * print _sign - prints the sign of a number
+ * print_sign - Prints the sign of the number
  * @n: the number to be checked
- * Return: 1 for positive num, -1 for negative num 0 anything else
+ * Return: 1 for positive num, -1 for negative num and 0 for zero
  */
 
-int print_sign(int n)           
+int print_sign(int n)
 {
-        if (n > 0)
-        {
-                _putchar(43);
-                return (1);
-        }       
-        else if (n < 0)
+	if (n > 0)
+	{
+		_putchar(43);
+		return (1);
+	}
+	else if (n < 0)
 	{
 		_putchar(45);
 		return (-1);
