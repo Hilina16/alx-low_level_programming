@@ -2,11 +2,11 @@
 
 /**
  * main - A programme that prints a line with pputs function
- * Return: 0.
+ * Return: 0 (Success)
  */
 
 int main(void)
 {
-	puts("\ "Programming is like building a multilingual puzzl");
+	puts("\ "Programming is like building a multilingual puzzle");
 	return (0);
 }
