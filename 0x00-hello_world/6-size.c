@@ -1,10 +1,9 @@
 #include <stdio.h>
- 
+
 /**
  * main - print size of variables
  * Return: 0.
  */
-
 int main(void)
 {
 	char a;
