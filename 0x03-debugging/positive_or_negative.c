@@ -12,6 +12,6 @@ void positive_or_negative(int i)
 	}
 	else
 	{
-		printf("%d it is zero ", i);  
+		printf("%d is zero ", i);  
 	}
 }
