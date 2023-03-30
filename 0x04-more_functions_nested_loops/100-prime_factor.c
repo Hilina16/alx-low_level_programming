@@ -23,5 +23,7 @@ int main(void)
 			}
 		}
 	}
-	return (prime);
+	_putchar(prime + 48);
+	_putchar('\n');
+	return (0);
 }
