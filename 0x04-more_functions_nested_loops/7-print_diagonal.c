@@ -17,9 +17,12 @@ void print_diagonal(int n)
 				_putchar(' ');
 			}
 			_putchar('\\');
+			if (slash == n - 1)
+			{
+				continue;
+			}
 			_putchar('\n');
 		}
 	}
-	if (n <= 0)
-		_putchar('\n');
+	_putchar('\n');
 }
