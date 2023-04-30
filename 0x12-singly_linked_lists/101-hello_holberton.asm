@@ -1,17 +1,19 @@
-section.data
-	msg db 'Hello, Holberton!',0Ah;
-	len equ $ - msg;
-section.text
-	global_start
-_start:
-;
-mov eax,4;
-mov ebx,1;
-mov ecx,msg;
-mov edx,len;
-int 80h;
-;
-mov eax,1;
-xor ebx,ebx;
-int 80h;
+section .data
+    msg db "Hello, Holberton", 10; msg folloedby new line
+    len equ $ - msg + 1;len of msg
 
+section .text;start of the code
+    global main;define entry point
+    extern printf
+
+main:
+    push rbp
+    mov rbp, rsp
+
+    lea rdi, [msg]
+    xor eax, eax
+    call printf
+
+    mov eax, 0
+    leave
+    ret
