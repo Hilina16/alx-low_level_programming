@@ -21,11 +21,13 @@ size_t free_listint_safe(listint_t **h)
 		if (x > 0)
 		{
 			tmp = (*h)->next;
+			free(*h);
 			*h = tmp;
 			l++;
 		}
 		else
 		{
+			free(*h);
 			*h = NULL;
 			l++;
 			break;
